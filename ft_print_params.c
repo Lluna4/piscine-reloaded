@@ -1,23 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ltranca- <ltranca-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/14 14:00:06 by ltranca-          #+#    #+#             */
-/*   Updated: 2023/04/14 14:00:53 by ltranca-         ###   ########.fr       */
+/*   Created: 2023/04/14 14:03:00 by ltranca-          #+#    #+#             */
+/*   Updated: 2023/04/14 14:03:13 by ltranca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strcmp(char *s1, char *s2)
+#include <unistd.h>
+
+int main(int argc, char** argv)
 {
-	while (*s1 || *s2)
+	int indexp;
+	int indexc;
+	char jmp;
+
+	jmp = '\n';
+	if (argc < 1)
+		return 0;
+
+	indexp = 1;
+	while (argv[indexp])
 	{
-		if (*(unsigned char *)s1 != *(unsigned char *)s2)
-			return (*(unsigned char *)s1 - *(unsigned char *)s2);
-		s1++;
-		s2++;
+		indexc = 0;
+		while (argv[indexp][indexc])
+		{
+			ft_putchar(&argv[indexp][indexc]);
+			indexc++;
+		}
+		ft_putchar(&jmp);
+		indexp++;
 	}
-	return (0);
 }
