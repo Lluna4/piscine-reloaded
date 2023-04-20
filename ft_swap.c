@@ -6,15 +6,15 @@
 /*   By: ltranca- <ltranca-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:59:09 by ltranca-          #+#    #+#             */
-/*   Updated: 2023/04/13 16:00:27 by ltranca-         ###   ########.fr       */
+/*   Updated: 2023/04/20 18:20:59 by ltranca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
-    int buff;
+	int	buff;
 
-    buff = *a;
-    *a = *b;
-    *b = buff;
+	buff = *a;
+	*a = *b;
+	*b = buff;
 }

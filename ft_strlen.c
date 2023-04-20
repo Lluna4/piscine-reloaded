@@ -6,16 +6,16 @@
 /*   By: ltranca- <ltranca-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:27:19 by ltranca-          #+#    #+#             */
-/*   Updated: 2023/04/13 18:28:33 by ltranca-         ###   ########.fr       */
+/*   Updated: 2023/04/20 18:20:31 by ltranca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-    int ret;
+	int	ret;
 
-    ret = 0;
-    while(str[ret])
-        ret++;
-    return ret;
+	ret = 0;
+	while (str[ret])
+		ret++;
+	return (ret);
 }

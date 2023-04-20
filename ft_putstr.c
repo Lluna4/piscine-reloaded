@@ -6,15 +6,17 @@
 /*   By: ltranca- <ltranca-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:22:46 by ltranca-          #+#    #+#             */
-/*   Updated: 2023/04/13 18:26:57 by ltranca-         ###   ########.fr       */
+/*   Updated: 2023/04/20 18:25:27 by ltranca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putstr(char *str)
+void	ft_putchar(char a);
+
+void	ft_putstr(char *str)
 {
-    while (*str)
-    {
-        ft_putchar(*str);
-        str++;
-    }
+	while (*str)
+	{
+		ft_putchar(*str);
+		str++;
+	}
 }
